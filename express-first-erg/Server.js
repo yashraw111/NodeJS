@@ -14,8 +14,6 @@ app.set('View engine','ejs')
 
 app.use(express.static('public'))
 app.get('/',(req,res)=>{
-
-    // fs.appendFile('write.txt',`${Date.now()}`)
     res.render('pages/Home.ejs',{
         title:'Home page'
     })
